@@ -17,9 +17,9 @@ export const TooltipText: FC<TooltipTextProps> = ({ sum, data }) => {
   return (
     <div className={styles.TooltipWrapper}>
       <div className={styles.TooltipHeader}>
-        Failed checks:
-        {' '}
         {sum}
+        {' '}
+        Failed checks in total
       </div>
       <div className={styles.TooltipBody}>
         <div>

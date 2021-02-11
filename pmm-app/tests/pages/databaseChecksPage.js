@@ -104,7 +104,7 @@ module.exports = {
     tooltipNumbers.shift();
     const detailsFromTable = `Critical – ${tableNumbers[1]}\nMajor – ${tableNumbers[2]}\nTrivial – ${tableNumbers[3]}`;
 
-    assert.equal(`Failed checks: ${tableNumbers[0]}`, tooltipTotalNumber);
+    assert.equal(`${tableNumbers[0]} Failed checks in total`, tooltipTotalNumber);
     assert.equal(detailsFromTable, tooltipNumbers);
   },
 
