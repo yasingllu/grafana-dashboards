@@ -73,15 +73,52 @@
             "type": "dashboards"
         },
         {
-            "asDropdown": true,
+            "icon": "dashboard",
             "includeVars": false,
-            "keepTime": true,
+            "keepTime": false,
             "tags": [
                 "PMM"
             ],
             "targetBlank": false,
-            "title": "PMM",
-            "type": "dashboards"
+            "title": "PMM Add Instance",
+            "type": "link",
+            "url": "/graph/add-instance"
+        },
+        {
+            "icon": "dashboard",
+            "includeVars": false,
+            "keepTime": false,
+            "tags": [
+                "PMM"
+            ],
+            "targetBlank": false,
+            "title": "PMM Database Checks",
+            "type": "link",
+            "url": "/graph/pmm-database-checks"
+        },
+        {
+            "icon": "dashboard",
+            "includeVars": false,
+            "keepTime": false,
+            "tags": [
+                "PMM"
+            ],
+            "targetBlank": false,
+            "title": "PMM Settings",
+            "type": "link",
+            "url": "/graph/settings"
+        },
+        {
+            "icon": "dashboard",
+            "includeVars": false,
+            "keepTime": false,
+            "tags": [
+                "PMM"
+            ],
+            "targetBlank": false,
+            "title": "PMM Inventory",
+            "type": "link",
+            "url": "/graph/inventory"
         }
     ],
     "panels": [
@@ -4363,7 +4400,7 @@
                     },
                     "id": 100,
                     "options": {
-                        "content": "<br><br> Please go to <a href='/graph/d/pmm-settings/pmm-settings'>PMM Settings page</a> to get Diagnostic data",
+                        "content": "<br><br> Please go to <a href='/graph/settings'>PMM Settings page</a> to get Diagnostic data",
                         "mode": "html"
                     },
                     "pluginVersion": "7.1.0",

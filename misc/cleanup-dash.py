@@ -123,6 +123,51 @@ def add_links(dashboard):
                         'url': '/graph/d/pmm-qan/pmm-query-analytics'
                     }
                     dashboard['links'].append(add_item)
+                elif tag == 'PMM':
+                    add_item = {
+                        'icon': 'dashboard',
+                        'includeVars': False,
+                        'keepTime': False,
+                        'tags': [ tag ],
+                        'targetBlank': False,
+                        'title': 'PMM Add Instance',
+                        'type': 'link',
+                        'url': '/graph/add-instance'
+                    }
+                    dashboard['links'].append(add_item)
+                    add_item = {
+                        'icon': 'dashboard',
+                        'includeVars': False,
+                        'keepTime': False,
+                        'tags': [ tag ],
+                        'targetBlank': False,
+                        'title': 'PMM Database Checks',
+                        'type': 'link',
+                        'url': '/graph/pmm-database-checks'
+                    }
+                    dashboard['links'].append(add_item)
+                    add_item = {
+                        'icon': 'dashboard',
+                        'includeVars': False,
+                        'keepTime': False,
+                        'tags': [ tag ],
+                        'targetBlank': False,
+                        'title': 'PMM Settings',
+                        'type': 'link',
+                        'url': '/graph/settings'
+                    }
+                    dashboard['links'].append(add_item)
+                    add_item = {
+                        'icon': 'dashboard',
+                        'includeVars': False,
+                        'keepTime': False,
+                        'tags': [ tag ],
+                        'targetBlank': False,
+                        'title': 'PMM Inventory',
+                        'type': 'link',
+                        'url': '/graph/inventory'
+                    }
+                    dashboard['links'].append(add_item)
                 elif tag == 'Home' and (tag not in dashboard['tags']):
                     add_item = {
                         'icon': 'doc',

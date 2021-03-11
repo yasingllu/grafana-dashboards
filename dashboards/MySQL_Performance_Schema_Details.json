@@ -107,15 +107,52 @@
             "type": "dashboards"
         },
         {
-            "asDropdown": true,
+            "icon": "dashboard",
             "includeVars": false,
-            "keepTime": true,
+            "keepTime": false,
             "tags": [
                 "PMM"
             ],
             "targetBlank": false,
-            "title": "PMM",
-            "type": "dashboards"
+            "title": "PMM Add Instance",
+            "type": "link",
+            "url": "/graph/add-instance"
+        },
+        {
+            "icon": "dashboard",
+            "includeVars": false,
+            "keepTime": false,
+            "tags": [
+                "PMM"
+            ],
+            "targetBlank": false,
+            "title": "PMM Database Checks",
+            "type": "link",
+            "url": "/graph/pmm-database-checks"
+        },
+        {
+            "icon": "dashboard",
+            "includeVars": false,
+            "keepTime": false,
+            "tags": [
+                "PMM"
+            ],
+            "targetBlank": false,
+            "title": "PMM Settings",
+            "type": "link",
+            "url": "/graph/settings"
+        },
+        {
+            "icon": "dashboard",
+            "includeVars": false,
+            "keepTime": false,
+            "tags": [
+                "PMM"
+            ],
+            "targetBlank": false,
+            "title": "PMM Inventory",
+            "type": "link",
+            "url": "/graph/inventory"
         }
     ],
     "panels": [
@@ -3743,10 +3780,10 @@
                 "type": "interval"
             },
             {
+                "1111111111datasource": "Metrics",
                 "allFormat": "glob",
                 "allValue": null,
                 "current": {},
-                "1111111111datasource": "Metrics",
                 "definition": "label_values(mysql_global_variables_performance_schema{service_name=~\"$service_name\"}, node_name)",
                 "hide": 2,
                 "includeAll": false,

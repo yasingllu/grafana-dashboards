@@ -108,15 +108,52 @@
             "type": "dashboards"
         },
         {
-            "asDropdown": true,
+            "icon": "dashboard",
             "includeVars": false,
-            "keepTime": true,
+            "keepTime": false,
             "tags": [
                 "PMM"
             ],
             "targetBlank": false,
-            "title": "PMM",
-            "type": "dashboards"
+            "title": "PMM Add Instance",
+            "type": "link",
+            "url": "/graph/add-instance"
+        },
+        {
+            "icon": "dashboard",
+            "includeVars": false,
+            "keepTime": false,
+            "tags": [
+                "PMM"
+            ],
+            "targetBlank": false,
+            "title": "PMM Database Checks",
+            "type": "link",
+            "url": "/graph/pmm-database-checks"
+        },
+        {
+            "icon": "dashboard",
+            "includeVars": false,
+            "keepTime": false,
+            "tags": [
+                "PMM"
+            ],
+            "targetBlank": false,
+            "title": "PMM Settings",
+            "type": "link",
+            "url": "/graph/settings"
+        },
+        {
+            "icon": "dashboard",
+            "includeVars": false,
+            "keepTime": false,
+            "tags": [
+                "PMM"
+            ],
+            "targetBlank": false,
+            "title": "PMM Inventory",
+            "type": "link",
+            "url": "/graph/inventory"
         }
     ],
     "panels": [
@@ -5956,6 +5993,7 @@
                     "renderer": "flot",
                     "seriesOverrides": [
                         {
+                            "$$hashKey": "object:651",
                             "alias": "Avg",
                             "color": "#C4162A",
                             "fill": 0,
